@@ -1,6 +1,7 @@
 import Image from "next/image";
-import profilePic from "../../public/images/profile/Hero-image.png";
+import profilePic from "../../public/images/profile/Hero-Image.png";
 import AnimateHeading from "./components/AnimateHeading";
+import HeroButtons from "./components/HeroButtons";
 
 export default function Home() {
     return (
@@ -20,6 +21,7 @@ export default function Home() {
                         into real good looking web apps with my full-stack
                         development expertise and experience.
                     </p>
+                    <HeroButtons />
                 </article>
             </section>
         </main>
