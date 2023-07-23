@@ -3,3 +3,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    .blob-div {
+        border-radius: 70% 40% 50% 30% / 40% 60% 60% 40%;
+    }
+}

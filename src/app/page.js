@@ -1,13 +1,27 @@
 import Image from "next/image";
-import Logo from "../../public/images/Debaditya_Bhar_Logo.png";
+import profilePic from "../../public/images/profile/Hero-image.png";
+import AnimateHeading from "./components/AnimateHeading";
 
 export default function Home() {
     return (
-        <main className="flex min-h-screen flex-col items-center justify-center p-24 bg-light-color">
-            <h1 className="text-4xl font-roboto text-primary-color bg-secondary-color p-5 mb-5">
-                Debaditya Bhar
-            </h1>
-            <Image className="w-36 h-36 rounded-full" src={Logo} alt="logo" />
+        <main className="min-h-screen px-20 py-5 bg-light-color">
+            <section className="flex flex-row justify-between items-center rounded-[60% 40% 60% 50%]">
+                <div className="w-2/3 h-auto blob-div bg-gradient-to-br from-primary-color via-purple-500 to-secondary-color shadow-xl shadow-secondary-color">
+                    <Image
+                        src={profilePic}
+                        alt="hero-image"
+                        className="object-cover"
+                    />
+                </div>
+                <article className="flex flex-col justify-between items-start space-y-8 px-20">
+                    <AnimateHeading text="Transforming ideas into reality with Design and Code." />
+                    <p className="text-2xl text-dark-color font-poppins font-medium">
+                        As an experience web developer, I transform your ideas
+                        into real good looking web apps with my full-stack
+                        development expertise and experience.
+                    </p>
+                </article>
+            </section>
         </main>
     );
 }
