@@ -1,5 +1,5 @@
 import Image from "next/image";
-import LogoImg from "../../../public/images/Debaditya_Bhar_Logo.png";
+import LogoImg from "../../../public/images/profile/Debaditya_Bhar_Logo.png";
 import Link from "next/link";
 
 export default function Logo() {

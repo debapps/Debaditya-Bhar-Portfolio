@@ -1,6 +1,7 @@
 import Head from "next/head";
 import "./globals.css";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 export const metadata = {
     title: "Home | Debaditya Bhar",
@@ -34,6 +35,7 @@ export default function RootLayout({ children }) {
             <body>
                 <Header />
                 {children}
+                <Footer />
             </body>
         </html>
     );
