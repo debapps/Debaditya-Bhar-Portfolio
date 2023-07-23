@@ -13,8 +13,10 @@ module.exports = {
                 poppins: ["Poppins", "sans-serif"],
             },
             colors: {
-                "brand-color1": "#03045E",
-                "brand-color2": "#00B4D8",
+                "primary-color": "#03045E",
+                "secondary-color": "#00B4D8",
+                "light-color": "#F5F5F5",
+                "dark-color": "#1B1B1B",
                 "facebook-color": "#3b5998",
                 "insta-color": "#d6249f",
                 "github-color": "#f4a261",

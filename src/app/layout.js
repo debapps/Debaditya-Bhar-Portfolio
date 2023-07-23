@@ -1,4 +1,6 @@
+import Head from "next/head";
 import "./globals.css";
+import Header from "./components/Header";
 
 export const metadata = {
     title: "Home | Debaditya Bhar",
@@ -9,7 +11,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
     return (
         <html lang="en">
-            <head>
+            <Head>
                 <link
                     rel="apple-touch-icon"
                     sizes="180x180"
@@ -28,8 +30,11 @@ export default function RootLayout({ children }) {
                     href="/favicon/favicon-16x16.png"
                 />
                 <link rel="manifest" href="/favicon/site.webmanifest" />
-            </head>
-            <body>{children}</body>
+            </Head>
+            <body>
+                <Header />
+                {children}
+            </body>
         </html>
     );
 }
