@@ -2,14 +2,11 @@
 import { animate, motion } from "framer-motion";
 
 const quote = {
-    initial: {
-        y: 50,
-    },
+    initial: {},
     animate: {
-        y: 0,
         transition: {
             delay: 0.5,
-            staggerChildren: 0.08,
+            staggerChildren: 0.09,
         },
     },
 };

@@ -9,7 +9,8 @@ export default function Footer() {
                 <span className="hidden lg:block lg:border-l-2 lg:border-l-brand-color1 lg:h-20"></span>
                 {/* Copyright Text */}
                 <p className="font-poppins font-light text-xs">
-                    © {new Date().getFullYear()} - Debaditya Bhar
+                    {new Date().getFullYear()} &copy; All Rights Reserved -
+                    Debaditya Bhar
                 </p>
             </div>
         </footer>
