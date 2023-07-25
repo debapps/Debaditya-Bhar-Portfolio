@@ -23,6 +23,10 @@ module.exports = {
                 "twitter-color": "#1da1f2",
                 "linkedin-color": "#0E76A8",
             },
+            backgroundImage: {
+                "spiral-light":
+                    "repeating-radial-gradient(#1B1B1B 2px, #F5F5F5 5px, #F5F5F5 100px);s",
+            },
         },
     },
     plugins: [],

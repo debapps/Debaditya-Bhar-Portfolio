@@ -2,6 +2,7 @@ import Image from "next/image";
 import MyPic from "../../../public/images/profile/My-Pic.png";
 import AnimateHeading from "../components/AnimateHeading";
 import AnimatedNumber from "../components/AnimatedNumber";
+import SkillSection from "../components/SkillSection";
 
 export const metadata = {
     title: "About | Debaditya Bhar",
@@ -74,6 +75,7 @@ export default function About() {
                     </div>
                 </div>
             </section>
+            <SkillSection />
         </main>
     );
 }
