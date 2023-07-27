@@ -3,6 +3,7 @@ import MyPic from "../../../public/images/profile/My-Pic.png";
 import AnimateHeading from "../components/AnimateHeading";
 import AnimatedNumber from "../components/AnimatedNumber";
 import SkillSection from "../components/SkillSection";
+import Experience from "../components/Experience";
 
 export const metadata = {
     title: "About | Debaditya Bhar",
@@ -76,6 +77,7 @@ export default function About() {
                 </div>
             </section>
             <SkillSection />
+            <Experience />
         </main>
     );
 }
