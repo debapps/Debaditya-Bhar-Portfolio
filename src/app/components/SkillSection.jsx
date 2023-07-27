@@ -4,8 +4,9 @@ import { motion } from "framer-motion";
 function Skill({ value, x, y }) {
     return (
         <motion.span
-            className="text-base text-light-color bg-dark-color p-2 rounded-lg cursor-pointer absolute border border-solid border-transparent hover:border-dark-color hover:text-dark-color hover:bg-light-color"
-            whileHover={{ scale: 1.05 }}
+            className="text-base text-light-color bg-dark-color p-2 rounded-lg cursor-pointer 
+            absolute border border-solid border-transparent hover:border-dark-color 
+            hover:text-dark-color hover:bg-light-color"
             initial={{ x: 0, y: 0 }}
             whileInView={{ x: x, y: y }}
             transition={{ duration: 1.5 }}
@@ -23,7 +24,8 @@ export default function SkillSection() {
             </h1>
             <div className="w-full h-screen flex justify-center items-center relative bg-spiral-light">
                 <motion.span
-                    className="text-base text-light-color bg-dark-color p-2 w-16 h-16 text-center rounded-full cursor-pointer"
+                    className="text-base text-light-color bg-dark-color p-2 w-16 h-16 text-center 
+                    rounded-full cursor-pointer"
                     whileHover={{ scale: 1.05 }}>
                     My Skills
                 </motion.span>
