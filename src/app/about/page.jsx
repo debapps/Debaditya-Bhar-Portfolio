@@ -5,6 +5,7 @@ import AnimatedNumber from "../components/AnimatedNumber";
 import SkillSection from "../components/SkillSection";
 import Experience from "../components/Experience";
 import Education from "../components/Education";
+import Certifications from "../components/Certifications";
 
 export const metadata = {
     title: "About | Debaditya Bhar",
@@ -80,6 +81,7 @@ export default function About() {
             <SkillSection />
             <Experience />
             <Education />
+            <Certifications />
         </main>
     );
 }
