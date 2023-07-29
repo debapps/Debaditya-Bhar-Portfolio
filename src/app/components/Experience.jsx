@@ -4,6 +4,7 @@ import { expData } from "../../../public/data/expData";
 import { motion, useScroll } from "framer-motion";
 import { useRef } from "react";
 import CircleIcon from "./CircleIcon";
+import getHTML from "@/utilities/HTMLConverter";
 
 export default function Experience() {
     const scrollRef = useRef(null);
@@ -53,21 +54,21 @@ function Details({ position, company, companyLink, time, work }) {
                 className="flex flex-col justify-between items-start space-y-2"
                 initial={{ y: 50, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}>
-                <h3 className="text-2xl font-roboto font-bold text-dark-color capitalize">
+                <h3 className="text-2xl font-roboto font-bold text-primary-color capitalize">
                     {position}{" "}
                     <Link
                         href={companyLink}
                         target="_blank"
-                        className="text-primary-color">
+                        className="text-secondary-color">
                         @{company}
                     </Link>
                 </h3>
                 <span className="text-base font-normal font-poppins text-dark-color/70">
                     {time}
                 </span>
-                <p className="text-lg font-poppins text-dark-color/85">
-                    {work}
-                </p>
+                <div
+                    className="preview"
+                    dangerouslySetInnerHTML={{ __html: getHTML(work) }}></div>
             </motion.div>
         </li>
     );

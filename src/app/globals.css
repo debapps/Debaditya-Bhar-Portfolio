@@ -8,4 +8,79 @@
     .blob-div {
         border-radius: 70% 40% 50% 30% / 40% 60% 60% 40%;
     }
+
+    .preview {
+        @apply text-sm md:text-lg font-poppins font-medium tracking-wide;
+    }
+
+    .preview h1 {
+        @apply text-primary-color text-3xl md:text-5xl font-righteous font-extrabold py-10 leading-10 tracking-widest;
+    }
+
+    .preview h2 {
+        @apply text-primary-color text-xl md:text-3xl font-righteous font-bold py-10 leading-10 tracking-wider;
+    }
+
+    .preview h3 {
+        @apply text-primary-color text-lg md:text-xl font-righteous font-bold py-10 leading-10 tracking-wide;
+    }
+    .preview p {
+        @apply py-2 leading-8 tracking-normal;
+    }
+
+    .preview > p:first-child::first-letter {
+        @apply font-bold text-6xl;
+    }
+
+    .preview p > img {
+        @apply w-2/3 rounded-lg block pt-10 pb-7 mx-auto;
+    }
+
+    .preview p > img + em {
+        @apply text-base italic block w-full text-center pb-10;
+    }
+
+    .preview blockquote {
+        @apply block p-5 mx-10 my-5 bg-secondary-color border-l-8 border-l-primary-color text-base md:text-lg;
+    }
+
+    .preview strong {
+        @apply font-bold font-righteous;
+    }
+
+    .preview em {
+        @apply italic;
+    }
+
+    .preview a {
+        @apply text-primary-color bg-secondary-color;
+    }
+
+    .preview a:hover {
+        @apply text-secondary-color bg-primary-color;
+    }
+
+    .preview pre {
+        @apply bg-primary-color text-secondary-color block mx-auto min-w-fit p-5 m-5 rounded-xl;
+    }
+
+    .preview pre > code {
+        @apply text-xs md:text-base font-medium font-mono break-words;
+    }
+
+    .preview code {
+        @apply bg-primary-color text-secondary-color p-2 rounded-lg text-xs md:text-base font-medium font-mono break-words;
+    }
+
+    .preview ul {
+        @apply list-disc py-1 pl-10 m-2;
+    }
+
+    .preview ol {
+        @apply list-decimal py-1 pl-10 m-2;
+    }
+
+    .preview li {
+        @apply my-2;
+    }
 }
