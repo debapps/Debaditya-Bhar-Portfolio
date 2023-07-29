@@ -28,9 +28,9 @@
         @apply py-2 leading-8 tracking-normal;
     }
 
-    .preview > p:first-child::first-letter {
+    /* .preview > p:first-child::first-letter {
         @apply font-bold text-6xl;
-    }
+    } */
 
     .preview p > img {
         @apply w-2/3 rounded-lg block pt-10 pb-7 mx-auto;
