@@ -9,20 +9,24 @@ export default function Certifications() {
             <h1 className="text-7xl font-roboto text-primary-color mb-16">
                 Certifications
             </h1>
-            <div className="w-[75%] mx-auto flex flex-col items-center justify-center">
+            <motion.div
+                className="w-[90vw] mx-auto flex flex-row items-center justify-center"
+                initial={{ y: 100, opacity: 0.02 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                transition={{
+                    duration: 0.5,
+                    type: "spring",
+                }}>
                 {certData.map((cert, idx) => {
                     return (
                         <motion.div
                             key={idx}
-                            initial={{ x: 100, opacity: 0.02 }}
-                            whileInView={{ x: 0, opacity: 1 }}
                             whileHover={{ scale: 0.95 }}
-                            transition={{ duration: 1, type: "spring" }}
-                            className="bg-secondary-color/70 text-primary-color w-[50%] h-auto p-10 
-                            flex flex-col items-start justify-center my-5 rounded-md 
+                            className="bg-secondary-color/70 text-primary-color w-1/3 h-36 p-10 
+                            flex items-center justify-center mx-5 rounded-md 
                             shadow-md shadow-primary-color">
                             <Link href={cert.verfyLink} target="_blank">
-                                <h3 className="text-4xl font-righteous font-semibold mb-8">
+                                <h3 className="text-2xl font-righteous font-semibold mb-2">
                                     {cert.name}
                                 </h3>
                                 <p className="text-base font-poppins font-thin text-dark-color/75">
@@ -32,7 +36,7 @@ export default function Certifications() {
                         </motion.div>
                     );
                 })}
-            </div>
+            </motion.div>
         </section>
     );
 }
