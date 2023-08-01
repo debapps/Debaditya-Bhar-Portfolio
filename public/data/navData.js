@@ -12,7 +12,7 @@ export const navData = [
         href: "/project",
     },
     {
-        title: "Contact",
-        href: "/contact",
+        title: "Articles",
+        href: "https://fizzbuzzblog.vercel.app",
     },
 ];

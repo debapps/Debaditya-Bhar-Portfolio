@@ -13,7 +13,8 @@ export default function NavBar({ links }) {
                     <Link
                         className="font-righteous text-xl rounded-md text-primary-color relative group"
                         key={idx}
-                        href={link.href}>
+                        href={link.href}
+                        target={link.title === "Articles" ? "_blank" : "_self"}>
                         {link.title}
                         <span
                             className={`inline-block h-[2px] bg-secondary-color absolute left-0 bottom-0 group-hover:w-full transition-[width] ease-out duration-300 ${

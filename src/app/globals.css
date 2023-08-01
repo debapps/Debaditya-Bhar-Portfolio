@@ -10,7 +10,7 @@
     }
 
     .preview {
-        @apply text-sm md:text-lg font-poppins font-medium tracking-wide;
+        @apply text-sm md:text-base font-poppins font-medium tracking-wide;
     }
 
     .preview h1 {
