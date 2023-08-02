@@ -16,6 +16,9 @@ export default function SampleProject({
     githubRepo,
     projectLink,
 }) {
+    // Get the first 2 line of the summary.
+    const shortSummary = `${summary.split(".")[0]}. ${summary.split(".")[1]}.`;
+
     return (
         <motion.article
             initial={{ y: 50, opacity: 0 }}
@@ -34,29 +37,29 @@ export default function SampleProject({
                     height={788}
                 />
             </Link>
-            <section className="flex flex-col justify-center items-start space-y-10 m-5">
+            <section className="flex flex-col justify-center items-start space-y-5 m-5">
                 <Link
                     href={projectLink ? projectLink : githubRepo}
                     target="_blank">
-                    <h3 className="font-righteous text-2xl text-primary-color bg-secondary-color p-2 max-w-fit rounded-lg cursor-pointer">
+                    <h3 className="font-righteous text-xl text-primary-color bg-secondary-color p-2 max-w-fit rounded-lg cursor-pointer">
                         {title}
                     </h3>
                 </Link>
                 <div
                     className="preview"
-                    dangerouslySetInnerHTML={{ __html: getHTML(summary) }}
+                    dangerouslySetInnerHTML={{ __html: getHTML(shortSummary) }}
                 />
                 <div className="w-full flex justify-between items-center">
                     <Link href={githubRepo} target="_blank">
                         <GitHubIcon
                             className="text-github-color cursor-pointer hover:-translate-y-1"
-                            fontSize="large"
+                            fontSize="medium"
                         />
                     </Link>
                     {projectLink && (
                         <Link
-                            className="max-w-fit p-2 bg-dark-color text-light-color 
-                        rounded-md hover:bg-secondary-color active:scale-95 font-righteous   text-base"
+                            className="max-w-fit p-1 bg-dark-color text-light-color 
+                        rounded-sm hover:bg-secondary-color active:scale-95 font-righteous text-sm"
                             href={projectLink}
                             target="_blank">
                             Visit Project <OutboundIcon />

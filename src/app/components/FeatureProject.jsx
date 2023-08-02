@@ -27,7 +27,7 @@ export default function FeatureProject({
                 href={projectLink ? projectLink : githubRepo}
                 target="_blank">
                 <Image
-                    className="rounded-2xl w-full overflow-hidden"
+                    className="w-full rounded-2xl object-cover overflow-hidden"
                     src={image}
                     alt={title}
                     width={940}
@@ -38,7 +38,7 @@ export default function FeatureProject({
                 <Link
                     href={projectLink ? projectLink : githubRepo}
                     target="_blank">
-                    <h3 className="font-righteous text-2xl text-primary-color bg-secondary-color p-2 max-w-fit rounded-lg cursor-pointer">
+                    <h3 className="font-righteous text-3xl text-primary-color bg-secondary-color p-2 max-w-fit rounded-lg cursor-pointer">
                         {title}
                     </h3>
                 </Link>
