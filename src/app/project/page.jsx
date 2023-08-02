@@ -11,7 +11,7 @@ export const metadata = {
 
 export default function Project() {
     return (
-        <main className="min-h-screen px-32 py-10 bg-light-color">
+        <main className="min-h-screen px-32 py-10 bg-light-color dark:bg-dark-color">
             <AnimateHeading text={`My Journey through Ingenuity`} />
             <section className="grid grid-cols-12 gap-y-24 gap-x-10 w-full my-20">
                 <div className="col-span-12">

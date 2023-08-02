@@ -6,7 +6,8 @@ export default function Logo() {
     return (
         <Link href="/">
             <Image
-                className="w-16 h-16 rounded-full"
+                className="w-16 h-16 rounded-full border border-solid 
+                border-transparent dark:border-light-color"
                 src={LogoImg}
                 alt="logo-image"
             />

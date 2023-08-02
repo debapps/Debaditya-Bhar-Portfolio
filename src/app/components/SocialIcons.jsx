@@ -4,13 +4,19 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import LightModeIcon from "@mui/icons-material/LightMode";
+import DarkModeIcon from "@mui/icons-material/DarkMode";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import useThemeSwitcher from "../hooks/useThemeSwitcher";
 
 // Create custom motion link.
 const MotionLink = motion(Link);
 
 export default function SocialIcons() {
+    // website theme (dark or light).
+    const [theme, setTheme] = useThemeSwitcher();
+
     return (
         <section className="flex flex-row p-2 space-x-2">
             <MotionLink
@@ -53,6 +59,23 @@ export default function SocialIcons() {
                     fontSize="medium"
                 />
             </MotionLink>
+
+            {theme === "light" ? (
+                <button
+                    onClick={() => {
+                        setTheme("dark");
+                    }}>
+                    <DarkModeIcon />
+                </button>
+            ) : (
+                <button
+                    className="text-light-color bg-dark-color"
+                    onClick={() => {
+                        setTheme("light");
+                    }}>
+                    <LightModeIcon />
+                </button>
+            )}
         </section>
     );
 }

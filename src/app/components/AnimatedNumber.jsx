@@ -27,6 +27,6 @@ export default function AnimatedNumber({ value }) {
     return (
         <span
             ref={ref}
-            className="block text-5xl font-roboto text-primary-color"></span>
+            className="block text-5xl font-roboto text-primary-color dark:text-secondary-color"></span>
     );
 }

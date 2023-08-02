@@ -19,13 +19,13 @@ function Skill({ value, x, y }) {
 export default function SkillSection() {
     return (
         <section className="flex flex-col justify-center items-center mt-32 w-full">
-            <h1 className="text-7xl font-roboto text-primary-color mb-8">
+            <h1 className="text-7xl font-roboto text-primary-color dark:text-secondary-color mb-8">
                 Skills
             </h1>
             <div className="w-full h-screen flex justify-center items-center relative bg-spiral-light">
                 <motion.span
-                    className="text-base text-light-color bg-dark-color p-2 w-16 h-16 text-center 
-                    rounded-full cursor-pointer"
+                    className="text-base text-light-color bg-dark-color p-2 w-16 h-16 
+                    text-center rounded-full cursor-pointer"
                     whileHover={{ scale: 1.05 }}>
                     My Skills
                 </motion.span>

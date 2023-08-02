@@ -11,7 +11,7 @@ export default function NavBar({ links }) {
             {links.map((link, idx) => {
                 return (
                     <Link
-                        className="font-righteous text-xl rounded-md text-primary-color relative group"
+                        className="font-righteous text-xl rounded-md text-primary-color dark:text-secondary-color relative group"
                         key={idx}
                         href={link.href}
                         target={link.title === "Articles" ? "_blank" : "_self"}>
