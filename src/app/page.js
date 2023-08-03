@@ -12,6 +12,8 @@ export default function Home() {
                         src={profilePic}
                         alt="hero-image"
                         className="object-cover"
+                        priority
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
                     />
                 </div>
                 <article className="flex flex-col justify-between items-start space-y-8 px-20">

@@ -62,6 +62,8 @@ export default function About() {
                         src={MyPic}
                         alt="my-image"
                         className="w-full rounded-2xl"
+                        priority
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     />
                 </div>
                 <div className="w-20 h-auto flex flex-col justify-between items-start space-y-20">

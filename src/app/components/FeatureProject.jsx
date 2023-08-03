@@ -36,6 +36,8 @@ export default function FeatureProject({
                     alt={title}
                     width={940}
                     height={788}
+                    priority
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
                 />
             </Link>
             <section className="w-1/2 flex flex-col justify-center items-start space-y-10 m-5">
