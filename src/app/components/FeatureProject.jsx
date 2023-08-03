@@ -7,8 +7,9 @@ import OutboundIcon from "@mui/icons-material/Outbound";
 import getHTML from "@/utilities/HTMLConverter";
 import { motion } from "framer-motion";
 
-// This is Feature Project.
+const MotionImage = motion(Image);
 
+// This is Feature Project.
 export default function FeatureProject({
     title,
     image,
@@ -20,14 +21,16 @@ export default function FeatureProject({
         <motion.article
             initial={{ y: 50, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
-            className="flex flex-row justify-between items-start w-full border-2 border-solid
+            className="flex flex-row justify-between items-center w-full p-10 border-2 border-solid
         border-dark-color dark:border-light-color rounded-2xl shadow-xl shadow-secondary-color 
         bg-white dark:bg-dark-color">
             <Link
-                className="w-2/3 mr-4"
+                className="w-1/2 mr-4"
                 href={projectLink ? projectLink : githubRepo}
                 target="_blank">
-                <Image
+                <MotionImage
+                    whileHover={{ scale: 1.05 }}
+                    transition={{ duration: 0.3 }}
                     className="w-full rounded-2xl object-cover overflow-hidden"
                     src={image}
                     alt={title}
@@ -35,7 +38,7 @@ export default function FeatureProject({
                     height={788}
                 />
             </Link>
-            <section className="w-1/3 flex flex-col justify-center items-start space-y-10 m-5">
+            <section className="w-1/2 flex flex-col justify-center items-start space-y-10 m-5">
                 <Link
                     href={projectLink ? projectLink : githubRepo}
                     target="_blank">
