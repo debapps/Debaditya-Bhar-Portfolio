@@ -14,18 +14,18 @@
     }
 
     .preview h1 {
-        @apply text-primary-color text-3xl md:text-5xl font-righteous font-extrabold py-10 leading-10 tracking-widest;
+        @apply text-primary-color dark:text-secondary-color text-3xl md:text-5xl font-righteous font-extrabold py-10 leading-10 tracking-widest;
     }
 
     .preview h2 {
-        @apply text-primary-color text-xl md:text-3xl font-righteous font-bold py-10 leading-10 tracking-wider;
+        @apply text-primary-color dark:text-secondary-color text-xl md:text-3xl font-righteous font-bold py-10 leading-10 tracking-wider;
     }
 
     .preview h3 {
-        @apply text-primary-color text-lg md:text-xl font-righteous font-bold py-10 leading-10 tracking-wide;
+        @apply text-primary-color dark:text-secondary-color text-lg md:text-xl font-righteous font-bold py-10 leading-10 tracking-wide;
     }
     .preview p {
-        @apply py-2 leading-8 tracking-normal;
+        @apply py-2 leading-8 tracking-normal text-dark-color dark:text-light-color;
     }
 
     /* .preview > p:first-child::first-letter {
@@ -57,11 +57,11 @@
     }
 
     .preview a:hover {
-        @apply text-secondary-color bg-primary-color;
+        @apply text-secondary-color bg-primary-color dark:text-secondary-color;
     }
 
     .preview pre {
-        @apply bg-primary-color text-secondary-color block mx-auto min-w-fit p-5 m-5 rounded-xl;
+        @apply bg-primary-color text-secondary-color dark:text-secondary-color block mx-auto min-w-fit p-5 m-5 rounded-xl;
     }
 
     .preview pre > code {
@@ -69,7 +69,7 @@
     }
 
     .preview code {
-        @apply bg-primary-color text-secondary-color p-2 rounded-lg text-xs md:text-base font-medium font-mono break-words;
+        @apply bg-primary-color text-secondary-color dark:text-secondary-color p-2 rounded-lg text-xs md:text-base font-medium font-mono break-words;
     }
 
     .preview ul {
@@ -81,6 +81,6 @@
     }
 
     .preview li {
-        @apply my-2;
+        @apply my-2 text-dark-color dark:text-light-color;
     }
 }

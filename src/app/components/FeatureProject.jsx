@@ -21,7 +21,8 @@ export default function FeatureProject({
             initial={{ y: 50, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             className="flex flex-row justify-between items-start w-full border-2 border-solid
-        border-dark-color rounded-2xl shadow-xl shadow-secondary-color bg-white">
+        border-dark-color dark:border-light-color rounded-2xl shadow-xl shadow-secondary-color 
+        bg-white dark:bg-dark-color">
             <Link
                 className="w-2/3 mr-4"
                 href={projectLink ? projectLink : githubRepo}
@@ -38,7 +39,9 @@ export default function FeatureProject({
                 <Link
                     href={projectLink ? projectLink : githubRepo}
                     target="_blank">
-                    <h3 className="font-righteous text-3xl text-primary-color bg-secondary-color p-2 max-w-fit rounded-lg cursor-pointer">
+                    <h3
+                        className="font-righteous text-3xl text-primary-color bg-secondary-color 
+                    p-2 max-w-fit rounded-lg cursor-pointer">
                         {title}
                     </h3>
                 </Link>
@@ -55,8 +58,9 @@ export default function FeatureProject({
                     </Link>
                     {projectLink && (
                         <Link
-                            className="max-w-fit p-2 bg-dark-color text-light-color 
-                            rounded-md hover:bg-secondary-color active:scale-95 font-righteous   text-base"
+                            className="max-w-fit p-2 rounded-md bg-dark-color dark:bg-secondary-color
+                            hover:bg-secondary-color text-light-color dark:hover:text-primary-color
+                            active:scale-95 font-righteous text-base"
                             href={projectLink}
                             target="_blank">
                             Visit Project <OutboundIcon />

@@ -14,12 +14,13 @@ export default function Education() {
 
     return (
         <section className="flex flex-col justify-center items-center my-32 w-full">
-            <h1 className="text-7xl font-roboto text-primary-color mb-16">
+            <h1 className="text-7xl font-roboto text-primary-color dark:text-secondary-color mb-16">
                 Education
             </h1>
             <div ref={scrollRef} className="w-[75%] mx-auto relative">
                 <motion.div
-                    className="absolute top-0 left-4 w-1 h-full bg-dark-color origin-top"
+                    className="absolute top-0 left-4 w-1 h-full bg-dark-color 
+                    dark:bg-light-color origin-top"
                     style={{ scaleY: scrollYProgress }}
                 />
                 <ul className="flex flex-col justify-between items-start ml-4">
@@ -52,10 +53,12 @@ function Details({ degree, time, institute, info }) {
                 className="flex flex-col justify-between items-start space-y-2"
                 initial={{ y: 50, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}>
-                <h3 className="text-2xl font-roboto font-bold text-primary-color capitalize">
+                <h3
+                    className="text-2xl font-roboto font-bold text-primary-color 
+                dark:text-secondary-color capitalize">
                     {degree}
                 </h3>
-                <span className="text-base font-normal font-poppins text-dark-color/70">
+                <span className="text-base font-normal font-poppins text-dark-color/70 dark:text-light-color">
                     {time} | {institute}
                 </span>
                 <div

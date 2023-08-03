@@ -8,7 +8,7 @@ export default function CircleIcon({ targetRef }) {
     });
 
     return (
-        <figure className="absolute -left-[229px] -top-10 stroke-primary-color">
+        <figure className="absolute -left-[229px] -top-10 stroke-primary-color dark:stroke-secondary-color">
             <svg width="75" height="75" viewBox="0 0 100 100">
                 <circle
                     cx="75"
@@ -20,7 +20,7 @@ export default function CircleIcon({ targetRef }) {
                     cx="75"
                     cy="75"
                     r="20"
-                    className="fill-light-color stroke-primary-color"
+                    className="fill-light-color stroke-primary-color dark:stroke-secondary-color"
                     style={{
                         strokeWidth: 5,
                         pathLength: scrollYProgress,
@@ -30,7 +30,7 @@ export default function CircleIcon({ targetRef }) {
                     cx="75"
                     cy="75"
                     r="10"
-                    className="storke-1 fill-secondary-color animate-pulse"
+                    className="storke-1 fill-secondary-color dark:fill-primary-color animate-pulse"
                 />
             </svg>
         </figure>

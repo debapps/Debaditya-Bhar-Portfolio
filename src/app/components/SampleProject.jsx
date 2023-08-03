@@ -24,7 +24,8 @@ export default function SampleProject({
             initial={{ y: 50, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             className="flex flex-col justify-between items-start w-full border-2 border-solid
-    border-dark-color rounded-2xl shadow-xl shadow-secondary-color bg-white">
+            border-dark-color dark:border-light-color rounded-2xl shadow-xl shadow-secondary-color 
+            bg-white dark:bg-dark-color">
             <Link
                 className="mb-4 w-full"
                 href={projectLink ? projectLink : githubRepo}
@@ -58,8 +59,9 @@ export default function SampleProject({
                     </Link>
                     {projectLink && (
                         <Link
-                            className="max-w-fit p-1 bg-dark-color text-light-color 
-                        rounded-sm hover:bg-secondary-color active:scale-95 font-righteous text-sm"
+                            className="max-w-fit p-2 rounded-md bg-dark-color dark:bg-secondary-color
+                            hover:bg-secondary-color text-light-color dark:hover:text-primary-color
+                            active:scale-95 font-righteous text-sm"
                             href={projectLink}
                             target="_blank">
                             Visit Project <OutboundIcon />
