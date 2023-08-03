@@ -62,6 +62,7 @@ export default function SocialIcons() {
 
             {theme === "light" ? (
                 <button
+                    className="text-dark-color bg-light-color rounded-full"
                     onClick={() => {
                         setTheme("dark");
                     }}>
@@ -69,7 +70,7 @@ export default function SocialIcons() {
                 </button>
             ) : (
                 <button
-                    className="text-light-color bg-dark-color"
+                    className="text-light-color bg-dark-color rounded-full"
                     onClick={() => {
                         setTheme("light");
                     }}>

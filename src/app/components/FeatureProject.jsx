@@ -21,6 +21,7 @@ export default function FeatureProject({
         <motion.article
             initial={{ y: 50, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: true }}
             className="flex flex-row justify-between items-center w-full p-10 border-2 border-solid
         border-dark-color dark:border-light-color rounded-2xl shadow-xl shadow-secondary-color 
         bg-white dark:bg-dark-color">

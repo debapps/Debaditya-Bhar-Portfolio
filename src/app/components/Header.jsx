@@ -10,7 +10,9 @@ export default function Header() {
             <div className="absolute left-[50%] translate-x-[-50%]">
                 <Logo />
             </div>
-            <SocialIcons />
+            <div className="lg:hidden block">
+                <SocialIcons />
+            </div>
         </header>
     );
 }
