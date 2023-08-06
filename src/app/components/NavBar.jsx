@@ -3,6 +3,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import SocialIcons from "./SocialIcons";
+import { motion } from "framer-motion";
 
 export default function NavBar({ links }) {
     // Get the current pathname.
@@ -35,9 +36,11 @@ export default function NavBar({ links }) {
             </button>
 
             {/* Navigation Menu for Hamburger Menu */}
-            <div
+            <motion.div
+                initial={{ scale: 0, opacity: 0, x: "-50%", y: "-50%" }}
+                animate={{ scale: 1, opacity: 1, x: "-50%", y: "-50%" }}
                 className={`min-w-[75vw] bg-dark-color/90 dark:bg-light-color/75 backdrop-blur-md z-10
-                p-10 rounded-md fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 ${
+                p-10 rounded-lg fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 ${
                     isOpen ? "block" : "hidden"
                 }`}>
                 <nav className="flex flex-col justify-between items-center space-y-8">
@@ -67,7 +70,7 @@ export default function NavBar({ links }) {
                     })}
                     <SocialIcons />
                 </nav>
-            </div>
+            </motion.div>
 
             {/* Navigation Links for large screen */}
             <nav className="lg:hidden flex flex-row justify-between items-center space-x-8">

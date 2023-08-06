@@ -2,11 +2,11 @@ import Logo from "./Logo";
 
 export default function Footer() {
     return (
-        <footer className="p-2 border-t-[0.5px] border-dark-color dark:border-light-color bg-light-color dark:bg-dark-color flex flex-col lg:flex-row justify-center lg:justify-between items-center">
-            <div className="flex flex-col lg:flex-row justify-center lg:justify-start items-center space-y-4 lg:space-x-5 m-2">
+        <footer className="p-2 border-t-[0.5px] border-dark-color dark:border-light-color bg-light-color dark:bg-dark-color flex lg:flex-col flex-row lg:justify-center justify-between items-center">
+            <div className="flex lg:flex-col flex-row lg:justify-center justify-start items-center lg:space-y-4 space-x-5 m-2">
                 <Logo />
                 {/* Virtical Divider */}
-                <span className="hidden lg:block lg:border-l-2 lg:border-l-brand-color1 lg:h-20"></span>
+                <span className="lg:hidden block border-l-2 border-l-brand-color1 h-20"></span>
                 {/* Copyright Text */}
                 <p className="font-poppins font-light text-xs text-dark-color dark:text-light-color">
                     {new Date().getFullYear()} &copy; All Rights Reserved -
