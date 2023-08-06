@@ -27,8 +27,8 @@ export default function About() {
                 space-x-32 md:space-x-0 pt-10">
                 {/* Biography */}
                 <article
-                    className="flex flex-col justify-between md:justify-center items-start md:items-center 
-                space-y-8 w-1/2 md:w-full md:mb-10 md:order-2">
+                    className="flex flex-col justify-between md:justify-center items-start
+                    space-y-8 w-1/2 md:w-full md:mb-10 md:order-2">
                     <h2
                         className="text-4xl lg:text-3xl md:text-2xl
                          text-primary-color dark:text-secondary-color font-roboto">

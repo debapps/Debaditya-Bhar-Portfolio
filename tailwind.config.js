@@ -29,6 +29,18 @@ module.exports = {
                     "repeating-radial-gradient(#1B1B1B 2px, #F5F5F5 5px, #F5F5F5 100px);",
                 "spiral-dark":
                     "repeating-radial-gradient(#1b1b1b, #f5f5f5 2px, #1b1b1b 5px, #1b1b1b 100px);",
+                "spiral-light-lg":
+                    "repeating-radial-gradient(#1B1B1B 2px, #F5F5F5 5px, #F5F5F5 80px);",
+                "spiral-dark-lg":
+                    "repeating-radial-gradient(#1b1b1b, #f5f5f5 2px, #1b1b1b 5px, #1b1b1b 80px);",
+                "spiral-light-md":
+                    "repeating-radial-gradient(#1B1B1B 2px, #F5F5F5 5px, #F5F5F5 60px);",
+                "spiral-dark-md":
+                    "repeating-radial-gradient(#1b1b1b, #f5f5f5 2px, #1b1b1b 5px, #1b1b1b 60px);",
+                "spiral-light-sm":
+                    "repeating-radial-gradient(#1B1B1B 2px, #F5F5F5 5px, #F5F5F5 40px);",
+                "spiral-dark-sm":
+                    "repeating-radial-gradient(#1b1b1b, #f5f5f5 2px, #1b1b1b 5px, #1b1b1b 40px);",
             },
         },
         screens: {
