@@ -5,7 +5,9 @@ import HeroButtons from "./components/HeroButtons";
 
 export default function Home() {
     return (
-        <main className="min-h-screen p-20 xl:p-16 lg:p-12 md:p-8 sm:p-4 xs:p-2 bg-light-color dark:bg-dark-color">
+        <main
+            className="min-h-screen p-20 xl:p-16 lg:p-12 md:p-8 sm:p-4 
+            bg-light-color dark:bg-dark-color">
             <section className="flex flex-row md:flex-col justify-between items-center">
                 <div
                     className="w-full md:w-3/4 h-auto md:mt-10 md:mb-20 blob-div 

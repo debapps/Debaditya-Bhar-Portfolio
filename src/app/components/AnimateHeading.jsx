@@ -27,7 +27,7 @@ export default function AnimateHeading({ text }) {
     return (
         <div className="w-full overflow-hidden flex items-start justify-start py-2 sm:py-0">
             <motion.h1
-                className="text-7xl xl:text-6xl lg:text-4xl md:text-2xl 
+                className="text-7xl xl:text-6xl lg:text-4xl md:text-2xl
                 text-primary-color dark:text-secondary-color font-bold font-roboto inline-block"
                 variants={quote}
                 initial="initial"

@@ -10,27 +10,23 @@
     }
 
     .preview {
-        @apply text-sm md:text-base font-poppins font-medium tracking-wide;
+        @apply md:text-sm text-base font-poppins font-medium tracking-wide;
     }
 
     .preview h1 {
-        @apply text-primary-color dark:text-secondary-color text-3xl md:text-5xl font-righteous font-extrabold py-10 leading-10 tracking-widest;
+        @apply text-primary-color dark:text-secondary-color md:text-3xl text-5xl font-righteous font-extrabold py-10 leading-10 tracking-widest;
     }
 
     .preview h2 {
-        @apply text-primary-color dark:text-secondary-color text-xl md:text-3xl font-righteous font-bold py-10 leading-10 tracking-wider;
+        @apply text-primary-color dark:text-secondary-color md:text-xl text-3xl font-righteous font-bold py-10 leading-10 tracking-wider;
     }
 
     .preview h3 {
-        @apply text-primary-color dark:text-secondary-color text-lg md:text-xl font-righteous font-bold py-10 leading-10 tracking-wide;
+        @apply text-primary-color dark:text-secondary-color md:text-lg text-xl font-righteous font-bold py-10 leading-10 tracking-wide;
     }
     .preview p {
-        @apply py-2 leading-8 tracking-normal text-dark-color dark:text-light-color;
+        @apply py-2 leading-8 tracking-normal text-dark-color dark:text-light-color md:text-justify;
     }
-
-    /* .preview > p:first-child::first-letter {
-        @apply font-bold text-6xl;
-    } */
 
     .preview p > img {
         @apply w-2/3 rounded-lg block pt-10 pb-7 mx-auto;
@@ -41,7 +37,7 @@
     }
 
     .preview blockquote {
-        @apply block p-5 mx-10 my-5 bg-secondary-color border-l-8 border-l-primary-color text-base md:text-lg;
+        @apply block p-5 mx-10 my-5 bg-secondary-color border-l-8 border-l-primary-color md:text-base text-lg;
     }
 
     .preview strong {
@@ -65,11 +61,11 @@
     }
 
     .preview pre > code {
-        @apply text-xs md:text-base font-medium font-mono break-words;
+        @apply md:text-xs text-base font-medium font-mono break-words;
     }
 
     .preview code {
-        @apply bg-primary-color text-secondary-color dark:text-secondary-color p-2 rounded-lg text-xs md:text-base font-medium font-mono break-words;
+        @apply bg-primary-color text-secondary-color dark:text-secondary-color p-2 rounded-lg md:text-xs text-base font-medium font-mono break-words;
     }
 
     .preview ul {
