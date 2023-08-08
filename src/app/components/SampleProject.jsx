@@ -17,7 +17,7 @@ export default function SampleProject({
     githubRepo,
     projectLink,
 }) {
-    // Get the first 2 line of the summary.
+    // Get the first 1 line of the summary.
     const shortSummary = `${summary.split(".")[0]}...`;
 
     return (

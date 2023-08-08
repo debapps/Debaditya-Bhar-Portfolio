@@ -11,7 +11,9 @@ export const metadata = {
 
 export default function Project() {
     return (
-        <main className="min-h-screen px-32 py-10 bg-light-color dark:bg-dark-color">
+        <main
+            className="min-h-screen px-32 xl:px-24 lg:px-16 md:px-12 sm:px-8 
+            py-10 bg-light-color dark:bg-dark-color">
             <AnimateHeading text={`My Journey through Ingenuity`} />
             <section className="grid grid-cols-12 gap-y-24 gap-x-10 w-full my-20">
                 <div className="col-span-12">
@@ -23,7 +25,7 @@ export default function Project() {
                         projectLink={projectData[0].projectLink}
                     />
                 </div>
-                <div className="col-span-6">
+                <div className="col-span-6 md:col-span-12">
                     <SampleProject
                         title={projectData[1].title}
                         summary={projectData[1].summary}
@@ -32,7 +34,7 @@ export default function Project() {
                         projectLink={projectData[1].projectLink}
                     />
                 </div>
-                <div className="col-span-6">
+                <div className="col-span-6 md:col-span-12">
                     <SampleProject
                         title={projectData[2].title}
                         summary={projectData[2].summary}
@@ -50,7 +52,7 @@ export default function Project() {
                         projectLink={projectData[3].projectLink}
                     />
                 </div>
-                <div className="col-span-6">
+                <div className="col-span-6 md:col-span-12">
                     <SampleProject
                         title={projectData[4].title}
                         summary={projectData[4].summary}
@@ -59,7 +61,7 @@ export default function Project() {
                         projectLink={projectData[4].projectLink}
                     />
                 </div>
-                <div className="col-span-6">
+                <div className="col-span-6 md:col-span-12">
                     <SampleProject
                         title={projectData[5].title}
                         summary={projectData[5].summary}

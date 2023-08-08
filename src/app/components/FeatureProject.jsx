@@ -17,16 +17,21 @@ export default function FeatureProject({
     githubRepo,
     projectLink,
 }) {
+    // Get the first 2 line of the summary.
+    const shortSummary = `${summary.split(".")[0]}. ${
+        summary.split(".")[1]
+    }...`;
+
     return (
         <motion.article
             initial={{ y: 50, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: true }}
-            className="flex flex-row justify-between items-center w-full p-10 border-2 border-solid
+            className="flex flex-row md:flex-col justify-between items-center w-full p-10 border-2 border-solid
         border-dark-color dark:border-light-color rounded-2xl shadow-xl shadow-secondary-color 
         bg-white dark:bg-dark-color">
             <Link
-                className="w-1/2 mr-4"
+                className="w-1/2 md:w-full mr-4 md:mr-0"
                 href={projectLink ? projectLink : githubRepo}
                 target="_blank">
                 <MotionImage
@@ -41,7 +46,7 @@ export default function FeatureProject({
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
                 />
             </Link>
-            <section className="w-1/2 flex flex-col justify-center items-start space-y-10 m-5">
+            <section className="w-1/2 md:w-full flex flex-col justify-center items-start space-y-10 m-5">
                 <Link
                     href={projectLink ? projectLink : githubRepo}
                     target="_blank">
@@ -52,8 +57,12 @@ export default function FeatureProject({
                     </h3>
                 </Link>
                 <div
-                    className="preview"
+                    className="preview md:hidden"
                     dangerouslySetInnerHTML={{ __html: getHTML(summary) }}
+                />
+                <div
+                    className="preview hidden md:block"
+                    dangerouslySetInnerHTML={{ __html: getHTML(shortSummary) }}
                 />
                 <div className="w-full flex justify-between items-center">
                     <Link href={githubRepo} target="_blank">
