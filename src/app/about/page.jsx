@@ -55,8 +55,8 @@ export default function About() {
                 </div>
                 {/* Statistics */}
                 <div
-                    className="w-20 h-auto flex flex-col md:flex-row justify-between items-start
-                    md:items-center space-y-20 md:space-y-0 md:space-x-10 md:order-3">
+                    className="w-20 h-auto flex flex-col md:flex-row justify-between
+                    items-center space-y-20 md:space-y-0 md:space-x-52 md:order-3">
                     <div className="flex flex-col justify-center items-start">
                         <AnimatedNumber value={12} />
                         <h3

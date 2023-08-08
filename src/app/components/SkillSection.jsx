@@ -21,7 +21,7 @@ export default function SkillSection() {
     return (
         <section className="flex flex-col justify-center items-center mt-32 w-full">
             <h1
-                className="text-7xl
+                className="text-7xl xl:text-6xl lg:text-4xl
                 font-roboto text-primary-color dark:text-secondary-color mb-32">
                 Skills
             </h1>
@@ -43,23 +43,23 @@ export default function SkillSection() {
                 {/* List of skills */}
 
                 <Skill value="HTML5" x="1vw" y="8vh" />
-                <Skill value="CSS3" x="-10vw" y="-12vh" />
-                <Skill value="JavaScript / ES6" x="-10vw" y="10vh" />
-                <Skill value="Bootstrap" x="14vw" y="2vh" />
+                <Skill value="CSS3" x="-13vw" y="-13vh" />
+                <Skill value="JavaScript / ES6" x="-10vw" y="13vh" />
+                <Skill value="Bootstrap" x="16vw" y="2vh" />
                 <Skill value="NodeJS" x="11vw" y="-20vh" />
-                <Skill value="ExpressJS" x="-20vw" y="-5vh" />
-                <Skill value="Go Lang" x="5vw" y="25vh" />
+                <Skill value="ExpressJS" x="-20vw" y="-2vh" />
+                <Skill value="Go Lang" x="5vw" y="29vh" />
                 <Skill value="Tailwind CSS" x="-10vw" y="-30vh" />
                 <Skill value="MySQL" x="25vw" y="-10vh" />
                 <Skill value="Unix Scripting" x="20vw" y="25vh" />
                 <Skill value="REST API" x="-20vw" y="25vh" />
-                <Skill value="MongoDB" x="-25vw" y="-28vh" />
+                <Skill value="MongoDB" x="-25vw" y="-26vh" />
                 <Skill value="Python" x="-30vw" y="20vh" />
                 <Skill value="NextJS" x="30vw" y="-20vh" />
-                <Skill value="Material UI" x="1vw" y="-42vh" />
+                <Skill value="Material UI" x="1vw" y="20vh" />
                 <Skill value="Mainframe" x="40vw" y="1vh" />
-                <Skill value="AWS" x="-15vw" y="-46vh" />
-                <Skill value="Git / GitHub" x="18vw" y="-45vh" />
+                <Skill value="AWS" x="-32vw" y="-6vh" />
+                <Skill value="Git / GitHub" x="25vw" y="8vh" />
             </div>
         </section>
     );

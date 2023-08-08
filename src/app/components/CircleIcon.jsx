@@ -8,7 +8,9 @@ export default function CircleIcon({ targetRef }) {
     });
 
     return (
-        <figure className="absolute -left-[229px] -top-10 stroke-primary-color dark:stroke-secondary-color">
+        <figure
+            className="absolute -left-[229px] xs:-left-[98px] md:-left-[153px] 
+            lg:-left-[167px] xl:-left-[212px] -top-10 stroke-primary-color dark:stroke-secondary-color">
             <svg width="75" height="75" viewBox="0 0 100 100">
                 <circle
                     cx="75"

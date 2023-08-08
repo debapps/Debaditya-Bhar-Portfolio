@@ -14,7 +14,9 @@ export default function Education() {
 
     return (
         <section className="flex flex-col justify-center items-center my-32 w-full">
-            <h1 className="text-7xl font-roboto text-primary-color dark:text-secondary-color mb-16">
+            <h1
+                className="text-7xl xl:text-6xl lg:text-4xl
+                font-roboto text-primary-color dark:text-secondary-color mb-16">
                 Education
             </h1>
             <div ref={scrollRef} className="w-[75%] mx-auto relative">
@@ -54,11 +56,13 @@ function Details({ degree, time, institute, info }) {
                 initial={{ y: 50, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}>
                 <h3
-                    className="text-2xl font-roboto font-bold text-primary-color 
-                dark:text-secondary-color capitalize">
+                    className="text-2xl xl:text-xl lg:text-lg font-roboto font-bold 
+                    text-primary-color dark:text-secondary-color capitalize">
                     {degree}
                 </h3>
-                <span className="text-base font-normal font-poppins text-dark-color/70 dark:text-light-color">
+                <span
+                    className="text-base md:text-sm font-normal font-poppins 
+                    text-dark-color/70 dark:text-light-color">
                     {time} | {institute}
                 </span>
                 <div

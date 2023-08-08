@@ -23,7 +23,7 @@ export default function Home() {
                 </div>
                 <article className="flex flex-col justify-between items-start space-y-8 ml-20 md:ml-0 md:px-5">
                     <AnimateHeading text="Transforming ideas into reality with Design and Code." />
-                    <p className="text-2xl xl:text-xl lg:text-lg md:text-md sm:text-base xs:text-xs text-dark-color dark:text-light-color font-poppins font-medium">
+                    <p className="text-2xl xl:text-xl lg:text-lg md:text-md text-dark-color dark:text-light-color font-poppins font-medium">
                         As an experience web developer, I transform your ideas
                         into really good looking web apps with my full-stack
                         development expertise and experience.

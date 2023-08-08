@@ -10,7 +10,7 @@
     }
 
     .preview {
-        @apply md:text-sm text-base font-poppins font-medium tracking-wide;
+        @apply text-lg md:text-base font-poppins font-medium tracking-wide;
     }
 
     .preview h1 {
@@ -69,14 +69,14 @@
     }
 
     .preview ul {
-        @apply list-disc py-1 pl-10 m-2;
+        @apply list-disc py-1 md:py-0 pl-10 md:pl-4 m-2 md:m-1;
     }
 
     .preview ol {
-        @apply list-decimal py-1 pl-10 m-2;
+        @apply list-decimal py-1 md:py-0 pl-10 md:pl-4 m-2 md:m-1;
     }
 
     .preview li {
-        @apply my-2 text-dark-color dark:text-light-color;
+        @apply my-2 md:my-1 text-dark-color dark:text-light-color text-lg md:text-base sm:text-sm xs:text-xs;
     }
 }
