@@ -27,11 +27,11 @@ export default function FeatureProject({
             initial={{ y: 50, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: true }}
-            className="flex flex-row md:flex-col justify-between items-center w-full p-10 border-2 border-solid
-        border-dark-color dark:border-light-color rounded-2xl shadow-xl shadow-secondary-color 
-        bg-white dark:bg-dark-color">
+            className="flex flex-row md:flex-col justify-between items-center w-full p-10 
+            border-2 border-solid border-dark-color dark:border-light-color rounded-2xl 
+            shadow-xl shadow-secondary-color bg-white dark:bg-dark-color">
             <Link
-                className="w-1/2 md:w-full mr-4 md:mr-0"
+                className="w-1/2 md:w-full mr-4 md:mr-0 md:mb-4"
                 href={projectLink ? projectLink : githubRepo}
                 target="_blank">
                 <MotionImage
@@ -46,13 +46,16 @@ export default function FeatureProject({
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
                 />
             </Link>
-            <section className="w-1/2 md:w-full flex flex-col justify-center items-start space-y-10 m-5">
+            <section
+                className="w-1/2 md:w-full flex flex-col justify-center items-start space-y-10 md:space-y-5
+                m-5 md:m-0 md:mt-10">
                 <Link
                     href={projectLink ? projectLink : githubRepo}
                     target="_blank">
                     <h3
-                        className="font-righteous text-3xl text-primary-color bg-secondary-color 
-                    p-2 max-w-fit rounded-lg cursor-pointer">
+                        className="font-righteous text-3xl md:text-xl
+                        text-primary-color bg-secondary-color 
+                        p-2 max-w-fit rounded-lg cursor-pointer">
                         {title}
                     </h3>
                 </Link>
@@ -75,7 +78,7 @@ export default function FeatureProject({
                         <Link
                             className="max-w-fit p-2 rounded-md bg-dark-color dark:bg-secondary-color
                             hover:bg-secondary-color text-light-color dark:hover:text-primary-color
-                            active:scale-95 font-righteous text-base"
+                            active:scale-95 font-righteous text-lg md:text-md sm:text-base xs:text-xs"
                             href={projectLink}
                             target="_blank">
                             Visit Project <OutboundIcon />

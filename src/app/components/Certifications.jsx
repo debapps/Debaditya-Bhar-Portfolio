@@ -12,7 +12,7 @@ export default function Certifications() {
                 Certifications
             </h1>
             <motion.div
-                className="w-[90vw] mx-auto flex flex-row md:flex-col items-center justify-center"
+                className="w-full mx-auto flex flex-row md:flex-col items-center justify-center"
                 initial={{ y: 100, opacity: 0.02 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{

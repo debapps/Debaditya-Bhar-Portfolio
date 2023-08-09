@@ -40,14 +40,18 @@ export default function SampleProject({
                     alt={title}
                     width={940}
                     height={788}
+                    priority
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
                 />
             </Link>
-            <section className="flex flex-col justify-center items-start space-y-5 m-5">
+            <section
+                className="flex flex-col justify-center items-start space-y-5
+                m-5 md:m-0 md:mt-10">
                 <Link
                     href={projectLink ? projectLink : githubRepo}
                     target="_blank">
                     <h3
-                        className="font-righteous text-xl text-primary-color 
+                        className="font-righteous text-xl md:text-lg text-primary-color 
                         bg-secondary-color p-2 max-w-fit rounded-lg cursor-pointer">
                         {title}
                     </h3>
@@ -67,7 +71,7 @@ export default function SampleProject({
                         <Link
                             className="max-w-fit p-2 rounded-md bg-dark-color dark:bg-secondary-color
                             hover:bg-secondary-color text-light-color dark:hover:text-primary-color
-                            active:scale-95 font-righteous text-sm"
+                            active:scale-95 font-righteous text-lg md:text-md sm:text-base xs:text-xs"
                             href={projectLink}
                             target="_blank">
                             Visit Project <OutboundIcon />
