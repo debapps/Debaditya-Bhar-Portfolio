@@ -11,15 +11,15 @@ export default function AnimateHeading({ text }) {
                     return (
                         <motion.span
                             key={idx}
-                            className={`inline-block mr-4 delay-[${idx * 0.1}]`}
+                            className="inline-block mr-4"
                             initial={{ y: "30px", opacity: 0.02 }}
                             animate={{ y: 0, opacity: 1 }}
                             transition={{
-                                duration: 0.8,
+                                duration: 1,
                                 ease: "easeInOut",
                                 delay: 0.1 * idx,
                             }}>
-                            {`${word}`}
+                            {`${word} `}
                         </motion.span>
                     );
                 })}

@@ -22,7 +22,7 @@ export const projectData = [
     },
     {
         title: "FizzBuzz Blog.",
-        summary: `**FizzBuzz Blog.** is my personal blogging website for cutting-edge digital technology, science and innovation, cloud computing and web technologies.\n FizzBuzz Blog is developed using following technologies:\n - **NEXT JS 13.** \n - **Tailwind CSS.** \n - **React Material UI.** \n - **Markdown Files.**\n\nBlogs are written in markdown format.`,
+        summary: `**FizzBuzz Blog** is my personal blogging website for cutting-edge digital technology, science and innovation, cloud computing and web technologies.\n FizzBuzz Blog is developed using following technologies:\n - **NEXT JS 13.** \n - **Tailwind CSS.** \n - **React Material UI.** \n - **Markdown Files.**\n\nBlogs are written in markdown format.`,
         image: "/images/project-images/FizzBuzz.jpg",
         githubRepo: "https://github.com/debapps/FizzBuzzBlog",
         projectLink: "https://fizzbuzzblog.vercel.app/",
