@@ -8,6 +8,7 @@ import Education from "../components/Education";
 import Certifications from "../components/Certifications";
 import { bioData } from "../../../public/data/bioData";
 import getHTML from "@/utilities/HTMLConverter";
+import TransitionEffect from "../components/TransitionEffect";
 
 export const metadata = {
     title: "About | Debaditya Bhar",
@@ -20,6 +21,7 @@ export default function About() {
         <main
             className="min-h-screen px-32 xl:px-24 lg:px-16 md:px-12 sm:px-8 
             py-10 bg-light-color dark:bg-dark-color w-full">
+            <TransitionEffect />
             <AnimateHeading text={`Embarking on the Growth Journey!`} />
 
             <section

@@ -2,6 +2,7 @@ import AnimateHeading from "../components/AnimateHeading";
 import { projectData } from "../../../public/data/projectData";
 import FeatureProject from "../components/FeatureProject";
 import SampleProject from "../components/SampleProject";
+import TransitionEffect from "../components/TransitionEffect";
 
 export const metadata = {
     title: "Projects | Debaditya Bhar",
@@ -14,6 +15,7 @@ export default function Project() {
         <main
             className="min-h-screen px-32 xl:px-24 lg:px-16 md:px-12 sm:px-8 
             py-10 bg-light-color dark:bg-dark-color w-full">
+            <TransitionEffect />
             <AnimateHeading text={`My Journey through Ingenuity`} />
             <section className="grid grid-cols-12 gap-y-24 gap-x-10 md:gap-x-0 w-full my-20">
                 <div className="col-span-12">

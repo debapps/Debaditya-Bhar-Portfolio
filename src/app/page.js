@@ -2,12 +2,14 @@ import Image from "next/image";
 import profilePic from "../../public/images/profile/Hero-Image.png";
 import AnimateHeading from "./components/AnimateHeading";
 import HeroButtons from "./components/HeroButtons";
+import TransitionEffect from "./components/TransitionEffect";
 
 export default function Home() {
     return (
         <main
             className="min-h-screen px-32 xl:px-24 lg:px-16 md:px-12 sm:px-8 
             py-10 bg-light-color dark:bg-dark-color w-full">
+            <TransitionEffect />
             <section className="flex flex-row md:flex-col justify-between items-center">
                 <div
                     className="w-full md:w-3/4 h-auto md:mt-10 md:mb-20 blob-div 
