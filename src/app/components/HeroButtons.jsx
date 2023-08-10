@@ -17,12 +17,12 @@ export default function HeroButtons() {
             </Link>
             <Link
                 className="inline-block p-2 bg-dark-color text-light-color dark:bg-secondary-color 
-                text-lg md:text-md sm:text-base xs:text-xs font-righteous rounded-md 
+                text-lg md:hidden font-righteous rounded-md 
                 border-2 border-solid border-transparent hover:border-dark-color 
                 dark:hover:border-light-color hover:bg-light-color hover:text-dark-color"
                 href={`mailto:bhar.debaditya@gmail.com`}
                 target="_blank">
-                Email me
+                Hire Me!
             </Link>
         </section>
     );

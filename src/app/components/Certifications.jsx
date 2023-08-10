@@ -24,15 +24,22 @@ export default function Certifications() {
                         <motion.div
                             key={idx}
                             whileHover={{ scale: 0.95 }}
+                            initial={{ y: 50, opacity: 0 }}
+                            whileInView={{ y: 0, opacity: 1 }}
+                            viewport={{ once: true }}
                             className="bg-secondary-color/70 text-primary-color 
                             dark:text-light-color w-1/3 md:w-full h-fit p-10 
                             flex items-center justify-center m-5 rounded-md 
                             shadow-md shadow-primary-color">
                             <Link href={cert.verfyLink} target="_blank">
-                                <h3 className="text-2xl lg:text-xl md:text-xl font-righteous font-semibold mb-2">
+                                <h3
+                                    className="text-2xl lg:text-xl md:text-xl font-righteous 
+                                font-semibold mb-2">
                                     {cert.name}
                                 </h3>
-                                <p className="text-base lg:text-base md:text-sm font-poppins font-thin text-dark-color/75 dark:text-primary-color">
+                                <p
+                                    className="text-base lg:text-base md:text-sm font-poppins 
+                                font-thin text-dark-color/75 dark:text-primary-color">
                                     Issued By: {cert.issuedBy}
                                 </p>
                             </Link>

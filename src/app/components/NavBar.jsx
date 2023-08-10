@@ -12,14 +12,17 @@ export default function NavBar({ links }) {
     // Hamburger Menu open hook.
     const [isOpen, setIsOpen] = useState(false);
 
+    // Toggle hamburger menu.
+    function toggleMenu() {
+        setIsOpen(!isOpen);
+    }
+
     return (
         <section className="flex flex-row justify-between items-center relative">
             {/* Hamburger Menu */}
             <button
                 className="hidden lg:flex flex-col justify-center items-center"
-                onClick={() => {
-                    setIsOpen(!isOpen);
-                }}>
+                onClick={toggleMenu}>
                 <span
                     className={`bg-dark-color dark:bg-light-color block w-5 h-0.5 
                 ${
@@ -47,9 +50,7 @@ export default function NavBar({ links }) {
                     {links.map((link, idx) => {
                         return (
                             <Link
-                                onClick={() => {
-                                    setIsOpen(!isOpen);
-                                }}
+                                onClick={toggleMenu}
                                 className="font-righteous text-xl rounded-md text-secondary-color dark:text-primary-color  relative group"
                                 key={idx}
                                 href={link.href}
@@ -68,7 +69,7 @@ export default function NavBar({ links }) {
                             </Link>
                         );
                     })}
-                    <SocialIcons />
+                    <SocialIcons toggleMenu={toggleMenu} />
                 </nav>
             </motion.div>
 

@@ -12,7 +12,7 @@ export default function AnimateHeading({ text }) {
                         <motion.span
                             key={idx}
                             className="inline-block mr-4"
-                            initial={{ y: "30px", opacity: 0.02 }}
+                            initial={{ y: 50, opacity: 0.02 }}
                             animate={{ y: 0, opacity: 1 }}
                             transition={{
                                 duration: 1,

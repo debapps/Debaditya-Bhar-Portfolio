@@ -13,7 +13,7 @@ import useThemeSwitcher from "../hooks/useThemeSwitcher";
 // Create custom motion link.
 const MotionLink = motion(Link);
 
-export default function SocialIcons() {
+export default function SocialIcons({ toggleMenu }) {
     // website theme (dark or light).
     const [theme, setTheme] = useThemeSwitcher();
 
@@ -27,6 +27,7 @@ export default function SocialIcons() {
                 <LinkedInIcon
                     className="text-linkedin-color cursor-pointer"
                     fontSize="medium"
+                    onClick={toggleMenu}
                 />
             </MotionLink>
             <MotionLink
@@ -37,6 +38,7 @@ export default function SocialIcons() {
                 <GitHubIcon
                     className="text-github-color cursor-pointer"
                     fontSize="medium"
+                    onClick={toggleMenu}
                 />
             </MotionLink>
             <MotionLink
@@ -47,6 +49,7 @@ export default function SocialIcons() {
                 <FacebookIcon
                     className="text-facebook-color cursor-pointer"
                     fontSize="medium"
+                    onClick={toggleMenu}
                 />
             </MotionLink>
             <MotionLink
@@ -57,6 +60,7 @@ export default function SocialIcons() {
                 <InstagramIcon
                     className="text-insta-color cursor-pointer"
                     fontSize="medium"
+                    onClick={toggleMenu}
                 />
             </MotionLink>
 
@@ -65,6 +69,10 @@ export default function SocialIcons() {
                     className="text-dark-color bg-light-color rounded-full"
                     onClick={() => {
                         setTheme("dark");
+
+                        if (typeof toggleMenu === "function") {
+                            toggleMenu();
+                        }
                     }}>
                     <DarkModeIcon />
                 </button>
@@ -73,6 +81,9 @@ export default function SocialIcons() {
                     className="text-light-color bg-dark-color rounded-full"
                     onClick={() => {
                         setTheme("light");
+                        if (typeof toggleMenu === "function") {
+                            toggleMenu();
+                        }
                     }}>
                     <LightModeIcon />
                 </button>
