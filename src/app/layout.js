@@ -4,9 +4,9 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 
 export const metadata = {
-    title: "Home | Debaditya Bhar",
+    title: "Home - Debaditya Bhar - AWS Certified Cloud Developer | Full Stack (MERN) Web Developer | Python Data Analyst | Mainframe Developer",
     description:
-        "This is Debaditya Bhar portfolio, experience, projects, education background, resume.",
+        "Debaditya Bhar - AWS Certified Cloud Developer | Full Stack (MERN) Web Developer | Python Data Analyst | Mainframe Developer.Next.JS, React JS, Node JS, MongoDB, HTML, CSS, JavaScript, Python, Pandas, COBOL, JCL, DB2, MtSQL. Open to work, remote work, hybrid work.",
 };
 
 export default function RootLayout({ children }) {

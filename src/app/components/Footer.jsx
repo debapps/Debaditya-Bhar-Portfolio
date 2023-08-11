@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Logo from "./Logo";
 
 export default function Footer() {
@@ -17,10 +18,17 @@ export default function Footer() {
                     {new Date().getFullYear()} &copy; All Rights Reserved -
                     Debaditya Bhar
                 </p>
-                <p className="font-poppins font-light text-xs text-dark-color dark:text-light-color">
+            </div>
+            <div className="m-2">
+                <Link
+                    href={`mailto:bhar.debaditya@gmail.com`}
+                    className="font-poppins font-bold text-xs text-dark-color 
+                    dark:text-light-color m-1">
                     Email: bhar.debaditya@gmail.com
-                </p>
-                <p className="font-poppins font-light text-xs text-dark-color dark:text-light-color">
+                </Link>
+                <p
+                    className="font-poppins font-bold text-xs text-dark-color 
+                    dark:text-light-color m-1">
                     Mob: +91-629-009-3829
                 </p>
             </div>

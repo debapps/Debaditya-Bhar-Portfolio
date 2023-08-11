@@ -10,7 +10,7 @@ export default function HeroButtons() {
                 text-lg md:text-md sm:text-base xs:text-xs font-righteous rounded-md border-2 
                 border-solid border-transparent hover:border-dark-color dark:hover:border-light-color 
                 hover:bg-light-color hover:text-dark-color"
-                href={`/resume/Resume-Debaditya-Bhar.pdf`}
+                href={`/resume/Debaditya_Bhar_Resume.pdf`}
                 target="_blank"
                 download={true}>
                 Resume <FileDownloadOutlinedIcon />
