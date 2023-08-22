@@ -1,5 +1,13 @@
 export const projectData = [
     {
+        title: "NEXT JS + Tailwind CSS Template & Tools",
+        summary: `This is project starter template for NEXT JS and Tailwind CSS. This project implements the following features:\n\n- Responsive web designing.\n- React WYSIWYG Rich Text Editor.\n- OAuth Integration with NEXT JS.\n- Remote API calls.\n- Easy-to-use Animations.\n- Implementing Dark mode.\n- Other Ready-made Front-end tools.`,
+        image: "/images/project-images/NextTemplate.jpg",
+        githubRepo:
+            "https://github.com/debapps/NEXTJS-TailwindCSS-Project-Template",
+        projectLink: "https://next-tailwind-ebon.vercel.app/",
+    },
+    {
         title: "CloudNote Application",
         summary: `**CloudNote** is a secure, cloud-based Note keeping application. User can Sign Up and Sign In with the email and password. User can add/fetch/edit/delete their notes on the application dashboard. The Application is built on **MERN stack (MongoDB Atlas, Next JS, Express JS)**.\n\n The Backend API is built on **Express JS, Prisma ORM, MongoDB Atlas**. It uses **password hash-encryption (bcrypt JS)** to protect user passwords, **JWT tokens** for user authentication. All the data stored in MongoDB Atlas on Cloud so that user data is available everywhere. The Backend server used REST API for data handling.`,
         image: "/images/project-images/CloudNote.jpg",
@@ -35,17 +43,17 @@ export const projectData = [
         projectLink: "https://debapps.github.io/CheckListApp/",
     },
     {
-        title: "Employee Data Validation",
-        summary: `The purpose of the project is to validate employee CSV file data and generate the employee CSV file with valid data for FTP. The input file of the project is to be taken from **Amazon S3** bucket - **employee-data-raw**. The output file is to be stored in another S3 bucket - **employee-data-ftp**.\n\nThis project is developed using **GOLANG SDK for Amazon S3**.`,
-        image: "/images/project-images/EmpDataGo.jpg",
-        githubRepo: "https://github.com/debapps/Employee-Validation-Go",
-        projectLink: null,
-    },
-    {
         title: "PhotoManager Application",
         summary: `**PhotoManager** application is a full-fledged Image browsing and Editing Software built using Python. \n This application have following features: \n - Grayscale \n - Enhance Color, Contrast, Brightness \n - Image super impose \n Rotate image \n - Thumbnail Generation \n\nThe following python libraries are used to develop the application: \n - **tkinter** (for GUI) \n - **pillow** (image processing)`,
         image: "/images/project-images/PhotoManager.jpg",
         githubRepo: "https://github.com/debapps/PhotoManager",
+        projectLink: null,
+    },
+    {
+        title: "Employee Data Validation",
+        summary: `The purpose of the project is to validate employee CSV file data and generate the employee CSV file with valid data for FTP. The input file of the project is to be taken from **Amazon S3** bucket - **employee-data-raw**. The output file is to be stored in another S3 bucket - **employee-data-ftp**.\n\nThis project is developed using **GOLANG SDK for Amazon S3**.`,
+        image: "/images/project-images/EmpDataGo.jpg",
+        githubRepo: "https://github.com/debapps/Employee-Validation-Go",
         projectLink: null,
     },
 ];

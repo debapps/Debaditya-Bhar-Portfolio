@@ -81,6 +81,15 @@ export default function Project() {
                         projectLink={projectData[6].projectLink}
                     />
                 </div>
+                <div className="col-span-6 md:col-span-12">
+                    <SampleProject
+                        title={projectData[7].title}
+                        summary={projectData[7].summary}
+                        image={projectData[7].image}
+                        githubRepo={projectData[7].githubRepo}
+                        projectLink={projectData[7].projectLink}
+                    />
+                </div>
             </section>
         </main>
     );
