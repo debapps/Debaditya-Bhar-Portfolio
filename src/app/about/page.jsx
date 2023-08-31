@@ -79,10 +79,10 @@ export default function About() {
                 </div>
             </section>
 
+            <Certifications />
             <SkillSection />
             <Experience />
             <Education />
-            <Certifications />
         </main>
     );
 }
